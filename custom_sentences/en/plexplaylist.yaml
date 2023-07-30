@@ -1,0 +1,46 @@
+# Example config/custom_sentences/en/plexstreamtv.yaml
+language: "en"
+intents:
+  plexplaylist:
+    data:
+      - sentences:
+          - "(start|play) [the][,] {playlist} playlist (on|in) [the] {media_player}"
+lists:
+  media_player:
+    values:
+      - in: "desktop"
+        out:  "media_player.plex_desktop"
+      - in: "top screen"
+        out:  "media_player.plex_desktop"
+      - in: "gaming rig"
+        out:  "media_player.plex_desktop"
+      - in: "bedroom"
+        out: "media_player.bedroom_tv"
+      - in: "bedroom tv"
+        out: "media_player.bedroom_tv"
+      - in: "downstairs"
+        out: "media_player.plex_plex_for_samsung_tv_2020"
+      - in: "downstairs tv"
+        out: "media_player.plex_plex_for_samsung_tv_2020"
+      - in: "living room"
+        out: "media_player.living_room_tv"
+      - in: "living room tv"
+        out: "media_player.living_room_tv"
+  playlist:
+    values:
+      - in: "Family Guy"
+        out:  "1643602"
+      - in: "Futurama"
+        out:  "1643600"
+      - in: "American Dad"
+        out:  "1643601"
+      - in: "The Simpsons"
+        out:  "1643599"
+      - in: "Simpsons"
+        out:  "1643599"
+      - in: "Simpsons"
+        out:  "1643599"
+      - in: "I Think You Should Leave"
+        out: "1643603"
+      - in: "I Think You Should Leave with Tim Robinson"
+        out: "1643603"

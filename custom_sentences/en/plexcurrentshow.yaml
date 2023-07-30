@@ -1,0 +1,33 @@
+# Example config/custom_sentences/en/plexstreamtv.yaml
+language: "en"
+intents:
+  plexcurrentshow:
+    data:
+      - sentences:
+          - "(start|play) my current show (on|in) [the] {media_player}"
+          - "(start|play) my current binge (on|in) [the] {media_player}"
+          - "(start|play) my current binge show (on|in) [the] {media_player}"
+          - "(start|play) my background noise (on|in) [the] {media_player}"
+          - "(start|play) my bedtime show (on|in) [the] {media_player}"
+          - "(start|play) my sleep show (on|in) [the] {media_player}"
+lists:
+  media_player:
+    values:
+      - in: "desktop"
+        out:  "media_player.plex_desktop"
+      - in: "top screen"
+        out:  "media_player.plex_desktop"
+      - in: "gaming rig"
+        out:  "media_player.plex_desktop"
+      - in: "bedroom"
+        out: "media_player.bedroom_tv"
+      - in: "bedroom tv"
+        out: "media_player.bedroom_tv"
+      - in: "downstairs"
+        out: "media_player.plex_plex_for_samsung_tv_2020"
+      - in: "downstairs tv"
+        out: "media_player.plex_plex_for_samsung_tv_2020"
+      - in: "living room"
+        out: "media_player.living_room_tv"
+      - in: "living room tv"
+        out: "media_player.living_room_tv"
